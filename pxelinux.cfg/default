@@ -1,0 +1,18 @@
+default menu.c32
+prompt 0
+timeout 100
+ONTIMEOUT chainlocal
+
+LABEL local
+        MENU LABEL Boot local hard drive
+        LOCALBOOT 0
+
+LABEL chainlocal
+	MENU LABEL Chain boot to local hard drive
+	KERNEL chain.c32
+	APPEND hd0
+	
+LABEL CentOS 6.3 x86_64 eth0
+        MENU LABEL Install CentOS 6.3 x86_64 eth0
+        KERNEL images/centos/6.3/x86_64/vmlinuz
+        APPEND ks=http://fubralimited.github.com/CentOS-KVM-Image-Tools/kickstarts/centos6x-hypervisor-gpt-selinux.cfg initrd=images/centos/6.3/x86_64/initrd.img ramdisk_size=100000 ksdevice=eth0 ip=dhcp url --url http://mirror.catn.com/pub/centos/6/os/x86_64
