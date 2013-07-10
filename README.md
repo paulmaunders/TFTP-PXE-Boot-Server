@@ -9,7 +9,7 @@ To use it, you need to
 
 2. Checkout this project code on the TFTP server, and ensure the tftp root points at this project folder.
 
-    git clone git@github.com:paulmaunders/TFTP-PXE-Boot-Server.git
+```git clone git@github.com:paulmaunders/TFTP-PXE-Boot-Server.git```
 
 3. Setup your DHCP to point at the TFTP server (using DHCP option 66 "next-server" if located on a different IP to the DHCP server)
 
