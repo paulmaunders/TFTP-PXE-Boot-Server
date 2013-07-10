@@ -15,4 +15,4 @@ LABEL chainlocal
 LABEL CentOS 6.3 x86_64 eth0
         MENU LABEL Install CentOS 6.3 x86_64 eth0
         KERNEL images/centos/6.3/x86_64/vmlinuz
-        APPEND ks=http://fubralimited.github.com/CentOS-KVM-Image-Tools/kickstarts/centos6x-hypervisor-gpt-selinux.cfg initrd=images/centos/6.3/x86_64/initrd.img ramdisk_size=100000 ksdevice=eth0 ip=dhcp url --url http://mirror.catn.com/pub/centos/6/os/x86_64
+        APPEND ks=http://fubralimited.github.io/CentOS-KVM-Image-Tools/kickstarts/centos6x-hypervisor-gpt-selinux.cfg initrd=images/centos/6.3/x86_64/initrd.img ramdisk_size=100000 ksdevice=eth0 ip=dhcp url --url http://mirror.catn.com/pub/centos/6/os/x86_64
