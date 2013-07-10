@@ -5,11 +5,11 @@ This project contains the basic files and folder setup needed for a TFTP PXELINU
 
 To use it, you need to
 
-1. Set up a TFTP server
+1. Set up a TFTP server. If you are using a Mac you could use this one - http://ww2.unime.it/flr/tftpserver/
 
 2. Checkout this project code on the TFTP server, and ensure the tftp root points at this project folder.
 
-```git clone git@github.com:paulmaunders/TFTP-PXE-Boot-Server.git```
+  ```git clone git@github.com:paulmaunders/TFTP-PXE-Boot-Server.git```
 
 3. Setup your DHCP to point at the TFTP server (using DHCP option 66 "next-server" if located on a different IP to the DHCP server)
 
