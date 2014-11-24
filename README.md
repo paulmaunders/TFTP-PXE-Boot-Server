@@ -3,6 +3,11 @@ TFTP-PXE-Boot-Server
 
 This project contains the basic files and folder setup needed for a TFTP PXELINUX server.
 
+It currently has support for network (PXE) installing:
+
+* Centos 6.x
+* Centos 7.0
+
 To use it, you need to
 
 1. Set up a TFTP server. If you are using a Mac you could use this one - http://ww2.unime.it/flr/tftpserver/
