@@ -8,6 +8,7 @@ It currently has support for network (PXE) installing:
 * Centos 6.x
 * Centos 7.0
 * Fedora 24
+* Ubuntu 16.04 (Xenial)
 
 To use it, you need to
 

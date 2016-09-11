@@ -31,3 +31,8 @@ LABEL Fedora-24-x86_64
 	MENU LABEL Install Fedora 24 x86_64
 	KERNEL images/fedora/24/x86_64/vmlinuz
 	APPEND initrd=images/fedora/24/x86_64/initrd.img ramdisk_size=100000 ip=dhcp inst.stage2=http://mirrorservice.org/sites/dl.fedoraproject.org/pub/fedora/linux/releases/24/Everything/x86_64/os/
+
+LABEL Ubuntu-16.04-Xenial
+  MENU LABEL Install Ubuntu 16.04 (Xenial)
+  KERNEL images/ubuntu/xenial/amd64/linux
+  APPEND initrd=images/ubuntu/xenial/amd64/initrd.gz vga=normal ramdisk_size=16432
