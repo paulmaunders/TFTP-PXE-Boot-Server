@@ -14,13 +14,13 @@ To use it, you need to
 
 1. Set up a TFTP server. If you are using a Mac you could use this one - http://ww2.unime.it/flr/tftpserver/
 2. Checkout this project code on the TFTP server, and ensure the tftp root points at this project folder.
-  ```git clone git@github.com:paulmaunders/TFTP-PXE-Boot-Server.git```
+  ```git clone --depth 1 https://github.com/paulmaunders/TFTP-PXE-Boot-Server .```
 3. Setup your DHCP to point at the TFTP server (using DHCP option 66 "next-server" if located on a different IP to the DHCP server)
 4. Setup your DHCP to offer the PXELINUX.0 as the boot filename (DHCP option 67).
-5. Edit the pxelinux.cfg/default file to add in your PXE boot options. I've included an example one for CentOS
+5. Edit the pxelinux.cfg/default file to add in your PXE boot options. I've included CentOS examples.
 
 
 Further instructions
 ====================
 
-If you have a Synology NAS then you can follow [these instructions](http://www.pyrosoft.co.uk/blog/2013/01/13/setting-up-a-pxe-boot-server-on-synology-dsm-4-2-beta/) to set up a working PXE boot system:
+If you have a Synology NAS then you can follow [these instructions](http://www.pyrosoft.co.uk/blog/2013/01/13/setting-up-a-pxe-boot-server-on-synology-dsm-4-2-beta/) to set up a working PXE boot system.
